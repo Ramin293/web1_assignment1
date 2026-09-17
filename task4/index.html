@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav>
+        <a class="list-link" href="../task1/index.html">Task 1</a>
+        <a class="list-link" href="../task2/index.html">Task 2</a>
+        <a class="list-link" href="../task3/exercise1/index.html">Task 3</a>
+        <a class="list-link" href="../task4/index.html">Task 4</a>
+    </nav>
+
+    <h1 id="table-title" class="title">Student Grades</h1>
+
+    <table>
+        <tr>
+            <th colspan="2">Student information</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Ramin Smagulov</td>
+            <td>Web Development</td>
+            <td>95</td>
+        </tr>
+        <tr class="highlight-row">
+            <td>Amina Sarsenova</td>
+            <td>Web Development</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>Daniyar Bekov</td>
+            <td>Web Development</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Madina Kassenova</td>
+            <td>Web Development</td>
+            <td>92</td>
+        </tr>
+    </table>
+
+    <h2 class="subtitle">Feedback Form</h2>
+
+    <form id="feedback-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="role">Role</label>
+        <select id="role" name="role">
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Other</option>
+        </select>
+
+        <label>Did you like the table?</label>
+        <div class="answer">
+            <input type="radio" id="yes" name="liked" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="liked" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
